@@ -32,20 +32,42 @@ get_header();
         <h2 class="section-title">Our Services</h2>
         <div class="services__grid">
             <?php
-            // BUG #2: The field name here is 'services' but the actual ACF field
-            // name (as defined in the JSON export) is 'service_items'.
-            // This will always return null/false, so no services will render.
-            if ( have_rows( 'services' ) ) :
-                while ( have_rows( 'services' ) ) : the_row();
+            // BUG #2: The field name prefix here is 'services_' (plural) but
+            // the actual ACF field names use 'service_' (singular).
+            // All get_field() calls will return null, so no services render.
+            $services = array(
+                array(
+                    'icon'  => get_field( 'services_1_icon' ),
+                    'title' => get_field( 'services_1_title' ),
+                    'desc'  => get_field( 'services_1_description' ),
+                ),
+                array(
+                    'icon'  => get_field( 'services_2_icon' ),
+                    'title' => get_field( 'services_2_title' ),
+                    'desc'  => get_field( 'services_2_description' ),
+                ),
+                array(
+                    'icon'  => get_field( 'services_3_icon' ),
+                    'title' => get_field( 'services_3_title' ),
+                    'desc'  => get_field( 'services_3_description' ),
+                ),
+            );
+
+            $has_services = false;
+            foreach ( $services as $service ) :
+                if ( $service['title'] ) :
+                    $has_services = true;
                     ?>
                     <div class="service-card">
-                        <div class="service-card__icon"><?php the_sub_field( 'icon' ); ?></div>
-                        <h3 class="service-card__title"><?php the_sub_field( 'title' ); ?></h3>
-                        <p class="service-card__description"><?php the_sub_field( 'description' ); ?></p>
+                        <div class="service-card__icon"><?php echo esc_html( $service['icon'] ); ?></div>
+                        <h3 class="service-card__title"><?php echo esc_html( $service['title'] ); ?></h3>
+                        <p class="service-card__description"><?php echo esc_html( $service['desc'] ); ?></p>
                     </div>
                     <?php
-                endwhile;
-            else :
+                endif;
+            endforeach;
+
+            if ( ! $has_services ) :
                 ?>
                 <p>No services to display.</p>
             <?php endif; ?>
@@ -57,23 +79,43 @@ get_header();
         <h2 class="section-title">Meet the Team</h2>
         <div class="team__grid">
             <?php
-            // BUG #3: Missing have_rows() check before while loop.
-            // If the repeater has no rows (or the field doesn't exist),
-            // this causes a fatal error / white screen.
-            while ( have_rows( 'team_members' ) ) : the_row();
-                $photo = get_sub_field( 'photo' );
-                ?>
-                <div class="team-card">
-                    <img
-                        class="team-card__photo"
-                        src="<?php echo esc_url( $photo['url'] ); ?>"
-                        alt="<?php echo esc_attr( $photo['alt'] ); ?>"
-                    />
-                    <h3 class="team-card__name"><?php the_sub_field( 'name' ); ?></h3>
-                    <p class="team-card__role"><?php the_sub_field( 'role' ); ?></p>
-                </div>
-                <?php
-            endwhile;
+            // BUG #3: get_field() for image fields returns an array or false.
+            // This code accesses $photo['url'] without checking if $photo
+            // is valid first. When no photo is set, $photo is false and
+            // $photo['url'] causes a fatal error / white screen.
+            $team = array(
+                array(
+                    'photo' => get_field( 'team_1_photo' ),
+                    'name'  => get_field( 'team_1_name' ),
+                    'role'  => get_field( 'team_1_role' ),
+                ),
+                array(
+                    'photo' => get_field( 'team_2_photo' ),
+                    'name'  => get_field( 'team_2_name' ),
+                    'role'  => get_field( 'team_2_role' ),
+                ),
+                array(
+                    'photo' => get_field( 'team_3_photo' ),
+                    'name'  => get_field( 'team_3_name' ),
+                    'role'  => get_field( 'team_3_role' ),
+                ),
+            );
+
+            foreach ( $team as $member ) :
+                if ( $member['name'] ) :
+                    ?>
+                    <div class="team-card">
+                        <img
+                            class="team-card__photo"
+                            src="<?php echo esc_url( $member['photo']['url'] ); ?>"
+                            alt="<?php echo esc_attr( $member['photo']['alt'] ); ?>"
+                        />
+                        <h3 class="team-card__name"><?php echo esc_html( $member['name'] ); ?></h3>
+                        <p class="team-card__role"><?php echo esc_html( $member['role'] ); ?></p>
+                    </div>
+                    <?php
+                endif;
+            endforeach;
             ?>
         </div>
     </section>

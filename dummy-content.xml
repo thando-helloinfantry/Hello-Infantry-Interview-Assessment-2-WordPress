@@ -26,6 +26,8 @@
         <wp:post_type>page</wp:post_type>
         <wp:status>publish</wp:status>
         <wp:post_name>home</wp:post_name>
+
+        <!-- Hero -->
         <wp:postmeta>
             <wp:meta_key>hero_title</wp:meta_key>
             <wp:meta_value><![CDATA[We Build Digital Experiences]]></wp:meta_value>
@@ -42,141 +44,137 @@
             <wp:meta_key>_hero_subtitle</wp:meta_key>
             <wp:meta_value><![CDATA[field_hero_subtitle]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Service 1 -->
         <wp:postmeta>
-            <wp:meta_key>service_items</wp:meta_key>
-            <wp:meta_value><![CDATA[3]]></wp:meta_value>
-        </wp:postmeta>
-        <wp:postmeta>
-            <wp:meta_key>_service_items</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_items]]></wp:meta_value>
-        </wp:postmeta>
-        <wp:postmeta>
-            <wp:meta_key>service_items_0_icon</wp:meta_key>
+            <wp:meta_key>service_1_icon</wp:meta_key>
             <wp:meta_value><![CDATA[💻]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_0_icon</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_icon]]></wp:meta_value>
+            <wp:meta_key>_service_1_icon</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_1_icon]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_0_title</wp:meta_key>
+            <wp:meta_key>service_1_title</wp:meta_key>
             <wp:meta_value><![CDATA[Web Development]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_0_title</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_title]]></wp:meta_value>
+            <wp:meta_key>_service_1_title</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_1_title]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_0_description</wp:meta_key>
+            <wp:meta_key>service_1_description</wp:meta_key>
             <wp:meta_value><![CDATA[Custom websites and web applications built with modern technologies and best practices.]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_0_description</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_description]]></wp:meta_value>
+            <wp:meta_key>_service_1_description</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_1_description]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Service 2 -->
         <wp:postmeta>
-            <wp:meta_key>service_items_1_icon</wp:meta_key>
+            <wp:meta_key>service_2_icon</wp:meta_key>
             <wp:meta_value><![CDATA[🎨]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_1_icon</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_icon]]></wp:meta_value>
+            <wp:meta_key>_service_2_icon</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_2_icon]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_1_title</wp:meta_key>
+            <wp:meta_key>service_2_title</wp:meta_key>
             <wp:meta_value><![CDATA[Branding & Design]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_1_title</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_title]]></wp:meta_value>
+            <wp:meta_key>_service_2_title</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_2_title]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_1_description</wp:meta_key>
+            <wp:meta_key>service_2_description</wp:meta_key>
             <wp:meta_value><![CDATA[Visual identities and design systems that communicate your brand's story effectively.]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_1_description</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_description]]></wp:meta_value>
+            <wp:meta_key>_service_2_description</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_2_description]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Service 3 -->
         <wp:postmeta>
-            <wp:meta_key>service_items_2_icon</wp:meta_key>
+            <wp:meta_key>service_3_icon</wp:meta_key>
             <wp:meta_value><![CDATA[📈]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_2_icon</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_icon]]></wp:meta_value>
+            <wp:meta_key>_service_3_icon</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_3_icon]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_2_title</wp:meta_key>
+            <wp:meta_key>service_3_title</wp:meta_key>
             <wp:meta_value><![CDATA[Digital Strategy]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_2_title</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_title]]></wp:meta_value>
+            <wp:meta_key>_service_3_title</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_3_title]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>service_items_2_description</wp:meta_key>
+            <wp:meta_key>service_3_description</wp:meta_key>
             <wp:meta_value><![CDATA[Data-driven strategies to grow your online presence and reach your target audience.]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_service_items_2_description</wp:meta_key>
-            <wp:meta_value><![CDATA[field_service_description]]></wp:meta_value>
+            <wp:meta_key>_service_3_description</wp:meta_key>
+            <wp:meta_value><![CDATA[field_service_3_description]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Team Member 1 -->
         <wp:postmeta>
-            <wp:meta_key>team_members</wp:meta_key>
-            <wp:meta_value><![CDATA[3]]></wp:meta_value>
-        </wp:postmeta>
-        <wp:postmeta>
-            <wp:meta_key>_team_members</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_members]]></wp:meta_value>
-        </wp:postmeta>
-        <wp:postmeta>
-            <wp:meta_key>team_members_0_name</wp:meta_key>
+            <wp:meta_key>team_1_name</wp:meta_key>
             <wp:meta_value><![CDATA[Sarah Johnson]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_0_name</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_name]]></wp:meta_value>
+            <wp:meta_key>_team_1_name</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_1_name]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>team_members_0_role</wp:meta_key>
+            <wp:meta_key>team_1_role</wp:meta_key>
             <wp:meta_value><![CDATA[Creative Director]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_0_role</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_role]]></wp:meta_value>
+            <wp:meta_key>_team_1_role</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_1_role]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Team Member 2 -->
         <wp:postmeta>
-            <wp:meta_key>team_members_1_name</wp:meta_key>
+            <wp:meta_key>team_2_name</wp:meta_key>
             <wp:meta_value><![CDATA[Mike Chen]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_1_name</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_name]]></wp:meta_value>
+            <wp:meta_key>_team_2_name</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_2_name]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>team_members_1_role</wp:meta_key>
+            <wp:meta_key>team_2_role</wp:meta_key>
             <wp:meta_value><![CDATA[Lead Developer]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_1_role</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_role]]></wp:meta_value>
+            <wp:meta_key>_team_2_role</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_2_role]]></wp:meta_value>
         </wp:postmeta>
+
+        <!-- Team Member 3 -->
         <wp:postmeta>
-            <wp:meta_key>team_members_2_name</wp:meta_key>
+            <wp:meta_key>team_3_name</wp:meta_key>
             <wp:meta_value><![CDATA[Priya Patel]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_2_name</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_name]]></wp:meta_value>
+            <wp:meta_key>_team_3_name</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_3_name]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>team_members_2_role</wp:meta_key>
+            <wp:meta_key>team_3_role</wp:meta_key>
             <wp:meta_value><![CDATA[UX Designer]]></wp:meta_value>
         </wp:postmeta>
         <wp:postmeta>
-            <wp:meta_key>_team_members_2_role</wp:meta_key>
-            <wp:meta_value><![CDATA[field_team_role]]></wp:meta_value>
+            <wp:meta_key>_team_3_role</wp:meta_key>
+            <wp:meta_value><![CDATA[field_team_3_role]]></wp:meta_value>
         </wp:postmeta>
     </item>
 

@@ -35,17 +35,24 @@ get_header();
 
         <?php
         // ─── Project Gallery ────────────────────────────────────────
-        $gallery = get_field( 'gallery' );
-        if ( $gallery ) :
+        $gallery_images = array(
+            get_field( 'gallery_image_1' ),
+            get_field( 'gallery_image_2' ),
+            get_field( 'gallery_image_3' ),
+        );
+        $gallery_images = array_filter( $gallery_images );
+
+        if ( $gallery_images ) :
         ?>
             <section class="single-project__gallery">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                    <?php foreach ( $gallery as $image ) : ?>
+                    <?php foreach ( $gallery_images as $image ) : ?>
                         <figure class="gallery-item">
                             <?php
-                            // BUG #4: $image is an Array (ACF Gallery returns arrays),
-                            // but this echoes the array directly instead of $image['url']
+                            // BUG #4: $image is an Array (ACF Image field returns arrays
+                            // when return format is "Array"), but this echoes the array
+                            // directly instead of $image['url']
                             ?>
                             <img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" loading="lazy" />
                         </figure>

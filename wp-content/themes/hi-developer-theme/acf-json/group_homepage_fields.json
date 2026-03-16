@@ -33,76 +33,156 @@
             "new_lines": "br"
         },
         {
-            "key": "field_service_items",
+            "key": "field_tab_services",
             "label": "Services",
-            "name": "service_items",
-            "type": "repeater",
-            "instructions": "Add the services your agency offers.",
-            "required": 0,
-            "min": 0,
-            "max": 12,
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_service_icon",
-                    "label": "Icon",
-                    "name": "icon",
-                    "type": "text",
-                    "instructions": "An emoji or icon character for this service.",
-                    "required": 0
-                },
-                {
-                    "key": "field_service_title",
-                    "label": "Title",
-                    "name": "title",
-                    "type": "text",
-                    "required": 1
-                },
-                {
-                    "key": "field_service_description",
-                    "label": "Description",
-                    "name": "description",
-                    "type": "textarea",
-                    "required": 0,
-                    "rows": 3
-                }
-            ]
+            "name": "",
+            "type": "tab",
+            "placement": "top"
         },
         {
-            "key": "field_team_members",
-            "label": "Team Members",
-            "name": "team_members",
-            "type": "repeater",
-            "instructions": "Add team member profiles.",
+            "key": "field_service_1_icon",
+            "label": "Service 1 — Icon",
+            "name": "service_1_icon",
+            "type": "text",
+            "instructions": "An emoji or icon character for this service.",
+            "required": 0
+        },
+        {
+            "key": "field_service_1_title",
+            "label": "Service 1 — Title",
+            "name": "service_1_title",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_service_1_description",
+            "label": "Service 1 — Description",
+            "name": "service_1_description",
+            "type": "textarea",
             "required": 0,
-            "min": 0,
-            "max": 20,
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_team_photo",
-                    "label": "Photo",
-                    "name": "photo",
-                    "type": "image",
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "required": 0
-                },
-                {
-                    "key": "field_team_name",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "required": 1
-                },
-                {
-                    "key": "field_team_role",
-                    "label": "Role",
-                    "name": "role",
-                    "type": "text",
-                    "required": 0
-                }
-            ]
+            "rows": 3
+        },
+        {
+            "key": "field_service_2_icon",
+            "label": "Service 2 — Icon",
+            "name": "service_2_icon",
+            "type": "text",
+            "instructions": "An emoji or icon character for this service.",
+            "required": 0
+        },
+        {
+            "key": "field_service_2_title",
+            "label": "Service 2 — Title",
+            "name": "service_2_title",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_service_2_description",
+            "label": "Service 2 — Description",
+            "name": "service_2_description",
+            "type": "textarea",
+            "required": 0,
+            "rows": 3
+        },
+        {
+            "key": "field_service_3_icon",
+            "label": "Service 3 — Icon",
+            "name": "service_3_icon",
+            "type": "text",
+            "instructions": "An emoji or icon character for this service.",
+            "required": 0
+        },
+        {
+            "key": "field_service_3_title",
+            "label": "Service 3 — Title",
+            "name": "service_3_title",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_service_3_description",
+            "label": "Service 3 — Description",
+            "name": "service_3_description",
+            "type": "textarea",
+            "required": 0,
+            "rows": 3
+        },
+        {
+            "key": "field_tab_team",
+            "label": "Team",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_team_1_photo",
+            "label": "Team Member 1 — Photo",
+            "name": "team_1_photo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "required": 0
+        },
+        {
+            "key": "field_team_1_name",
+            "label": "Team Member 1 — Name",
+            "name": "team_1_name",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_team_1_role",
+            "label": "Team Member 1 — Role",
+            "name": "team_1_role",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_team_2_photo",
+            "label": "Team Member 2 — Photo",
+            "name": "team_2_photo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "required": 0
+        },
+        {
+            "key": "field_team_2_name",
+            "label": "Team Member 2 — Name",
+            "name": "team_2_name",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_team_2_role",
+            "label": "Team Member 2 — Role",
+            "name": "team_2_role",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_team_3_photo",
+            "label": "Team Member 3 — Photo",
+            "name": "team_3_photo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "required": 0
+        },
+        {
+            "key": "field_team_3_name",
+            "label": "Team Member 3 — Name",
+            "name": "team_3_name",
+            "type": "text",
+            "required": 0
+        },
+        {
+            "key": "field_team_3_role",
+            "label": "Team Member 3 — Role",
+            "name": "team_3_role",
+            "type": "text",
+            "required": 0
         }
     ],
     "location": [

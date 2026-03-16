@@ -19,19 +19,6 @@
             "required": 0
         },
         {
-            "key": "field_project_gallery",
-            "label": "Gallery",
-            "name": "gallery",
-            "type": "gallery",
-            "instructions": "Upload project screenshots or photos.",
-            "required": 0,
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min": 0,
-            "max": 20
-        },
-        {
             "key": "field_project_description",
             "label": "Project Description",
             "name": "project_description",
@@ -41,6 +28,46 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1
+        },
+        {
+            "key": "field_tab_gallery",
+            "label": "Gallery",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_gallery_image_1",
+            "label": "Gallery Image 1",
+            "name": "gallery_image_1",
+            "type": "image",
+            "instructions": "Upload a project screenshot or photo.",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_gallery_image_2",
+            "label": "Gallery Image 2",
+            "name": "gallery_image_2",
+            "type": "image",
+            "instructions": "Upload a project screenshot or photo.",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_gallery_image_3",
+            "label": "Gallery Image 3",
+            "name": "gallery_image_3",
+            "type": "image",
+            "instructions": "Upload a project screenshot or photo.",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
         }
     ],
     "location": [
