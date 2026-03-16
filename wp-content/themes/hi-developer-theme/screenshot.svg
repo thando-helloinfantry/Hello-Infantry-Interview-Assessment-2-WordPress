@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#1a1a2e"/>
+  <text x="600" y="400" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle">Hello Infantry</text>
+  <text x="600" y="470" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" fill="#cccccc" text-anchor="middle">Developer Assessment Theme</text>
+  <text x="600" y="550" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" fill="#888888" text-anchor="middle">Find and fix the bugs</text>
+</svg>

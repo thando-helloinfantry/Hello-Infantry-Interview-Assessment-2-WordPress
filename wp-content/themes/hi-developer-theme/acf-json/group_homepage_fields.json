@@ -1,0 +1,124 @@
+{
+    "key": "group_homepage_fields",
+    "title": "Homepage Fields",
+    "fields": [
+        {
+            "key": "field_hero_image",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "instructions": "Upload a hero background image for the homepage.",
+            "required": 0
+        },
+        {
+            "key": "field_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "The main heading displayed over the hero image.",
+            "required": 0,
+            "default_value": "Welcome to Hello Infantry"
+        },
+        {
+            "key": "field_hero_subtitle",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "textarea",
+            "instructions": "A short description displayed below the hero title.",
+            "required": 0,
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_service_items",
+            "label": "Services",
+            "name": "service_items",
+            "type": "repeater",
+            "instructions": "Add the services your agency offers.",
+            "required": 0,
+            "min": 0,
+            "max": 12,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_service_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "text",
+                    "instructions": "An emoji or icon character for this service.",
+                    "required": 0
+                },
+                {
+                    "key": "field_service_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_service_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "required": 0,
+                    "rows": 3
+                }
+            ]
+        },
+        {
+            "key": "field_team_members",
+            "label": "Team Members",
+            "name": "team_members",
+            "type": "repeater",
+            "instructions": "Add team member profiles.",
+            "required": 0,
+            "min": 0,
+            "max": 20,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_team_photo",
+                    "label": "Photo",
+                    "name": "photo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "required": 0
+                },
+                {
+                    "key": "field_team_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_team_role",
+                    "label": "Role",
+                    "name": "role",
+                    "type": "text",
+                    "required": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

@@ -1,0 +1,62 @@
+{
+    "key": "group_project_fields",
+    "title": "Project Fields",
+    "fields": [
+        {
+            "key": "field_project_client",
+            "label": "Client",
+            "name": "client",
+            "type": "text",
+            "instructions": "The name of the client for this project.",
+            "required": 0
+        },
+        {
+            "key": "field_project_url",
+            "label": "Project URL",
+            "name": "project_url",
+            "type": "url",
+            "instructions": "A link to the live project, if available.",
+            "required": 0
+        },
+        {
+            "key": "field_project_gallery",
+            "label": "Gallery",
+            "name": "gallery",
+            "type": "gallery",
+            "instructions": "Upload project screenshots or photos.",
+            "required": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min": 0,
+            "max": 20
+        },
+        {
+            "key": "field_project_description",
+            "label": "Project Description",
+            "name": "project_description",
+            "type": "wysiwyg",
+            "instructions": "A detailed description of the project.",
+            "required": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

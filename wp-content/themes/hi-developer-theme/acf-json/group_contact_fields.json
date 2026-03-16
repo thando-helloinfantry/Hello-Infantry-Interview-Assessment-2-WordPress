@@ -1,0 +1,58 @@
+{
+    "key": "group_contact_fields",
+    "title": "Contact Page Fields",
+    "fields": [
+        {
+            "key": "field_company_email",
+            "label": "Company Email",
+            "name": "company_email",
+            "type": "email",
+            "instructions": "The main contact email address.",
+            "required": 0
+        },
+        {
+            "key": "field_company_phone",
+            "label": "Company Phone",
+            "name": "company_phone",
+            "type": "text",
+            "instructions": "The main contact phone number.",
+            "required": 0
+        },
+        {
+            "key": "field_company_address",
+            "label": "Company Address",
+            "name": "company_address",
+            "type": "textarea",
+            "instructions": "The physical address of the company.",
+            "required": 0,
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_map_embed",
+            "label": "Map Embed",
+            "name": "map_embed",
+            "type": "textarea",
+            "instructions": "Paste a Google Maps embed iframe here.",
+            "required": 0,
+            "rows": 4,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}
