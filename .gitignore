@@ -32,6 +32,9 @@ vendor/
 dist/
 build/
 
+# Solutions (internal only)
+SOLUTIONS.md
+
 # OS files
 .DS_Store
 Thumbs.db
